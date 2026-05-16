@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC PLAYER</title>
+    <link rel="stylesheet" href="./musicplayer.css">
+</head>
+<body>
+    <header>
+        <img src="playlist.svg" alt="playlist" id="playlist-img">
+        <h2>Feel the Music</h2>
+        <img src="music.svg" alt="music" id="music-img">
+    </header>
+    <main>
+        <div class="left">
+   <div class="song-image">
+   <img src="music.gif" alt="anime" id="music-anime">
+   </div>
+   <div class="volume-div">
+    <div class="volume-img">
+    <img src="volume.svg" alt="volume" id="vol-svg" >
+    </div>
+    <input type="range" id="volume-range" onchange="volume()">
+   </div>
+        </div>
+        <div class="right">
+<div class="details">
+    <h3 id="song-name">Beliver</h3>
+    <h5 id="song-artist">Imagine Dragons</h5>
+</div>
+<input type="range" id="song-duration" onchange="songduration()">
+<div class="controls">
+    <div class="prev-img">
+    <img src="previous.svg" alt="prev" id="previous-img" onclick="previous()"></div>
+    <div class="play-pause">
+    <img src="play.svg" alt="play" id="play-pause" onclick="playpause()"></div>
+    <div class="next-img">
+    <img src="next.svg" alt="next" id="next-img" onclick="next()"></div>
+</div>
+        </div>
+        <div class="playlist">
+          <div class="playlist-song">
+                <img src="images/images/download (2).jpeg" alt="alt">
+                <div class="song-details">
+                    <h2>Believer</h3>
+                    <h4>Imagine Dragons</h2>
+                </div>
+          </div>
+          <div class="playlist-song">
+            <img src="images/images/download (3).jpeg" alt="alt">
+            <div class="song-details">
+                <h2>Thunder</h3>
+                <h4>Imagine Dragons</h2>
+            </div>
+          </div>
+          <div class="playlist-song">
+            <img src="images/images/Malang-Sajna-Slowed-Reverb.jpg" alt="alt">
+            <div class="song-details">
+                <h2>Malang sajna</h3>
+                <h4>Arjit singh</h2>
+            </div>
+          </div>
+          <div class="playlist-song">
+            <img src="images/images/Faded-Instrumental.jpg" alt="alt">
+            <div class="song-details">
+                <h2>Faded</h3>
+                <h4>Alan walker</h2>
+            </div>
+          </div>
+        </div>
+    </main>
+    <script src="musicplayer.js"></script>
+</body>
+</html>
